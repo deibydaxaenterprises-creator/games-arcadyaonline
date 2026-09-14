@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca | ArcadyaOnline</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <span>🎮 <strong>Biblioteca</strong> de juegos y recursos</span>
+            <span>⚡ <strong>Descargas</strong> directas y verificadas</span>
+            <span>🎧 <strong>Soporte</strong> por Discord y WhatsApp</span>
+        </div>
+    </div>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <img class="logo-mark" src="img/logo.png" alt="ArcadyaSpace">
+                <span class="logo-text">ARCADYA<b>ONLINE</b></span>
+            </a>
+            <button type="button" class="nav-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="biblioteca.html" class="active">Biblioteca</a>
+                <a href="https://discord.arcadya.online" class="discord-btn" target="_blank" rel="noopener">Discord</a>
+            </nav>
+        </div>
+    </header>
+    <div class="category-banner">
+        <div>
+            <h1>Biblioteca</h1>
+            <p>Explora todo el contenido disponible de ArcadyaOnline</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar archivo…" autocomplete="off">
+        </div>
+
+        <div class="games-grid" id="games-grid">
+
+            <a href="juegos/minecraft-bedrock.html" class="game-card">
+                <img src="img/Minecraft/minecraftbedrock-android.jpg" alt="Minecraft" class="game-card-img">
+                <div class="game-card-body">
+                    <h3 class="game-card-title">Minecraft Bedrock v1.26.45.1</h3>
+                    <div class="game-card-badges">
+                        <span class="badge pinned">Popular</span>
+                        <span class="badge mod">Original</span>
+                        <span class="badge platform">Android</span>
+                        <span class="badge mod">ARC x AndroForever</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="juegos/minecraft-for-windows.html" class="game-card">
+                <img src="img/Minecraft/minecraftforwindows-pc.jpg" alt="Minecraft" class="game-card-img">
+                <div class="game-card-body">
+                    <h3 class="game-card-title">Minecraft For Windows v1.26.45.1</h3>
+                    <div class="game-card-badges">
+                        <span class="badge pinned">Popular</span>
+                        <span class="badge mod">Original</span>
+                        <span class="badge platform">Windows</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="add-on/villagernewsespañol.html" class="game-card">
+                <img src="img/Villager News Español/Villager News Add-On.jpg" alt="Minecraft" class="game-card-img">
+                <div class="game-card-body">
+                    <h3 class="game-card-title">Villager News Español</h3>
+                    <div class="game-card-badges">
+                        <span class="badge mod">Original</span>
+                        <span class="badge platform">Add-On</span>
+                        <span class="badge mod">Rionimex Studios x Element Animation</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <p id="no-results" class="no-results" style="display:none;">No se encontraron archivos.</p>
+    </div>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img class="logo-mark" src="img/logo.png" alt="ArcadyaSpace">
+                    <span>ARCADYASPACE</span>
+                </div>
+                <p>Games, complementos y recursos multiplataforma privados de ArcadyaOnline.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="https://discord.arcadya.online" target="_blank" rel="noopener">Discord oficial</a></li>
+                    <li><a href="https://wa.me/573118769927" target="_blank" rel="noopener">Soporte por WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 ArcadyaOnline — Biblioteca Oficial.</span>
+            <span>No afiliados con Mojang AB ni Microsoft.</span>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
