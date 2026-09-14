@@ -1,7 +1,4 @@
-// ARCADYA SPACE
 document.addEventListener('DOMContentLoaded', () => {
-
-  // ===== Recordar posicion de cada pagina principal =====
   const pageScrollStates = [
     {
       path: /(?:^|\/)biblioteca\.html$/i,
@@ -14,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       referrer: /\/biblioteca\.html|\/(?:juegos|add-on)\//i
     }
   ];
+
   const currentPageState = pageScrollStates.find(page => page.path.test(window.location.pathname));
 
   if (currentPageState) {
@@ -44,17 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // ===== Aparición progresiva al entrar en pantalla =====
   const revealItems = document.querySelectorAll(
-    '.topbar-inner, .logo-area, .nav-links a, .hero-split > div, .category-banner, .section-title, .search-box, '
-    + '.game-card, .info-card, .info-box, .game-detail, .game-cover, .game-info, .actions .btn, .footer-col'
+    '.topbar-inner, .logo-area, .nav-links a, .hero-split > div, .category-banner, .section-title, .search-box, ' +
+    '.game-card, .info-card, .info-box, .game-detail, .game-cover, .game-info, .actions .btn, .footer-col'
   );
 
   if (revealItems.length) {
     const quickReveal = /(?:biblioteca\.html|juegos\/|add-on\/)/i.test(window.location.pathname);
-    const revealDirections = [
-      { y: '52px', rotateX: '9deg' }
-    ];
+    const revealDirections = [{ y: '52px', rotateX: '9deg' }];
 
     if (quickReveal) document.body.classList.add('quick-reveal');
 
@@ -91,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== Menú móvil =====
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
   if (toggle && links) {
@@ -101,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   }
 
-  // ===== Modal de imágenes =====
   const btnVer = document.getElementById('btn-ver-imagenes');
   const modal = document.getElementById('modal-imagenes');
   const closeBtn = document.getElementById('modal-close');
@@ -128,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== Búsqueda de juegos (sin base de datos) =====
   const searchInput = document.getElementById('search-input');
   const gamesGrid = document.getElementById('games-grid');
   const noResults = document.getElementById('no-results');
